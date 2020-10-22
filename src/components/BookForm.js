@@ -17,7 +17,7 @@ const NewBookForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		// console.log(title, author)
-		dispatch({type: 'ADD_BOOK', book: {title, author}})
+		dispatch({type: 'ADD_BOOK', book: {title: title, author: author}})
 		setTitle('')
 		setAuthor('')
 	}
